@@ -1,4 +1,6 @@
+
 Module 3 — Feasibility & Guardrails
+Change Log (2025-11-18): – Updated distance rule to support ‘short walks only’ preference.
 
 Apply these if/else checks to make sure plans are realistic and adapt to edge cases:
 
