@@ -1,10 +1,8 @@
 for day in trip_days:
   prior themes = []
 
-  morning = pick activity(eg:attractions, restaurants, parks, museums)
-    candidates.filter(open_in(morning window))
-              .filter(proximity(lodging, ≤20min))
-              .filter(fits slot(morning window))
+  morning: pick activity(eg:attractions, restaurants, parks, museums)
+          Restriction: must be ≤20min
   )
   prior themes.append(morning.theme)
 
