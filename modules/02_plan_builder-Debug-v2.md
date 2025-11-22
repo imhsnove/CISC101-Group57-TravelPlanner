@@ -1,12 +1,12 @@
 for day in trip_days:
-  prior_themes = []
+  prior themes = []
 
   morning = pick activity(
     candidates.filter(open_in(morning_window))
               .filter(proximity(lodging, ≤20min))
               .filter(fits_slot(morning_window))
   )
-  prior_themes.append(morning.theme)
+  prior themes.append(morning.theme)
 
   midday = pick activity(
     candidates.filter(open_in(midday_window))
