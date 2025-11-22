@@ -8,20 +8,20 @@ for day in trip_days:
   )
   prior_themes.append(morning.theme)
 
-  midday = pick_activity(
+  midday = pick activity(
     candidates.filter(open_in(midday_window))
               .filter(proximity(morning, ≤20min))
               .filter(fits_slot(midday_window))
   )
   prior_themes.append(midday.theme)
 
-  afternoon = pick_activity(
+  afternoon = pick activity(
     candidates.filter(open_in(afternoon_window))
               .filter(proximity(midday, ≤35min))
               .filter(theme_different(prior_themes))
               .filter(fits_slot(afternoon_window))
   )
-  prior_themes.append(afternoon.theme)
+  prior themes.append(afternoon.theme)
 
   evening = pick_restaurant_or_event(
     candidates_restaurants.filter(open_in(evening_window))
